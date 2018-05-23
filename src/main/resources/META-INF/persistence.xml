@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PUnit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>posit_if.OM.Voyant</class>
+    <class>posit_if.OM.Employe</class>
+    <class>posit_if.OM.Conversation</class>
+    <class>posit_if.OM.Astrologue</class>
+    <class>posit_if.OM.Medium</class>
+    <class>posit_if.OM.Client</class>
+    <class>posit_if.OM.Tarologue</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Posit_IF"/>
+      <property name="javax.persistence.jdbc.user" value="abelin"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="DASI"/>
+    </properties>
+  </persistence-unit>
+</persistence>
