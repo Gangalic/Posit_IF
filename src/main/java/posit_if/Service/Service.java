@@ -221,7 +221,9 @@ public class Service {
 
             for(Object[] o : l){
                 s=new String[taille];
-                if(o[2+i]!= null && o[1+i]!= null){ //added "+i" for checking if voyances are finished
+		 //added "+i" for checking if voyances are finished
+		 // and make sure we have no null pointer at HeureFin
+                if(o[2+i]!= null && o[1+i]!= null){ 
                     if(v_emp){
                         s[1]=o[1].toString();
                         s[5]=o[4].toString();
