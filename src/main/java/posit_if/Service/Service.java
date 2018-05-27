@@ -339,6 +339,7 @@ public class Service {
             return null;
     }
     
+	//this service was added by IHM Team
     /**
      * Service permettant de trouver le Client en progress d'une voyance avec un 
      * Employe identifié
